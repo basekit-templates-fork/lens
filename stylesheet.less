@@ -323,18 +323,18 @@ button,
 
     // Navigation items
     .navigation-item.selected .item-name {
-        color: @color__navigation--text--selected;
+        color: @color__navigation--text;
     }
 
     .navigation-toggle,
     .navigation-toggle:before,
     .navigation-toggle:after {
-        background-color: @color__navigation--text--selected;
+        background-color: @color__navigation--text;
     }
 
     .navigation-item .item-name,
     .navigation-item.folder span.item-name:after {
-        color: fade(@color__navigation--text, 65%);
+        color: @color__navigation--text;
     }
 }
 
@@ -378,36 +378,25 @@ button,
 
         // Selected navigation colour
         &.selected .item-name {
-            color: @color__slideshow-title--text;
-
-            @media @tablet-860px {
-                color: @color__navigation--text;
-            }
+            color: @color__navigation--text--hover;
         }
 
         // Normal navigation colour
         .item-name {
-            color: fade(@color__slideshow-title--text, 65%);
+            color: @color__navigation--text;
             font-size: bkscale(@font__navigation--font-size, 0.95);
             line-height: bkscale(@font__navigation--font-size, 0.95);
 
-             @media @tablet-860px {
-                color: fade(@color__navigation--text, 65%);
-             }
-
             // hover navigation colour
             &:hover {
-                color: @color__slideshow-title--text;
+                color: @color__navigation--text--hover;
 
-                @media @tablet-860px {
-                    color: @color__navigation--text--hover;
-                }
             }
         }
 
         // Folder navigation colour
         &.folder ul .item-name {
-            color: fade(@color__navigation--text, 65%);
+            color: @color__navigation--text;
 
             &:hover {
                 color: @color__navigation--text--hover;
@@ -416,7 +405,7 @@ button,
 
         // Folder dropdown arrow
         &.folder span.item-name:after {
-            color: fade(white, 30%);
+            color: @color__navigation--text;
 
              @media @tablet-860px {
                 color: fade(@color__navigation--text, 75%);
@@ -426,18 +415,18 @@ button,
 
     // Ecom basket dividing line
     .ecombasket:before {
-        background-color: fade(@color__slideshow-title--text, 25%);
+        background-color: @color__navigation--text;
     }
 
     // Navigation icon colour
     .navigation-toggle {
 
         // Displays as icon's middle bar
-        background-color: white;
+        background-color: @color__navigation--text;
 
         &:before,
         &:after {
-            background-color: white;
+            background-color: @color__navigation--text;
         }
     }
 }
@@ -462,7 +451,7 @@ button,
     }
 
     .item-name {
-        color: fade(@color__navigation--text, 65%);
+        color: @color__navigation--text;
         text-overflow: initial;
         word-wrap: break-word;
         white-space: normal;
@@ -507,7 +496,7 @@ button,
 
         // Navigation dropdown arrow
         span.item-name:after {
-            color: fade(@color__navigation--text, 75%);
+            color: @color__navigation--text;
             content: "\f0dd";
             font-family: FontAwesome;
             font-size: 13px;
@@ -1319,3 +1308,4 @@ div[role="main"] {
 
 @import "@{templateLocal}/less/variables.less";
 //@import "@{templateLocal}/bk-v8-test.less";
+@import "@{templateLocal}/less/fork-lens.less";
