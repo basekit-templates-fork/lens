@@ -248,7 +248,7 @@
             "color__gallery-description--text": "@color-swatch1"
         },
         "slideshow": {
-            "color__slideshow-caption--background": "fade(black, 0%)",
+            "color__slideshow-caption--background": "transparent",
             "color__slideshow-title--text": "#ffffff",
             "color__slideshow-description--text": "#ffffff",
             "color__slideshow-pagination-item--background": "#ffffff"
